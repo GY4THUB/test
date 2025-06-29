@@ -1,17 +1,8 @@
-const CACHE_NAME = "TestingOffline";
-const urlsToCache = [
-  "/",
-  "/index.html","page2.html"
-];
-
-self.addEventListener("install", event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
-  );
-});
-
-self.addEventListener("fetch", event => {
-  event.respondWith(
-    caches.match(event.request).then(response => response || fetch(event.request))
-  );
-});
+{
+  "name": "Website application test",
+  "short_name": "WAT",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#222222"
+}
