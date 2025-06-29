@@ -1,8 +1,8 @@
 {
-  "name": "Website application test",
-  "short_name": "WAT",
+  "name": "My Web App",
+  "short_name": "MyApp",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#000000",
+  "background_color": "#ffffff",
   "theme_color": "#222222"
 }
