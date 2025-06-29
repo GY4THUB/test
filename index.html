@@ -7,15 +7,11 @@
 <meta name="theme-color" content="#222222">
     <title>Testing lang</title>
 </head>
-<style>
-    
-    
-    
-</style<script>
+<script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service-worker.js')
-      .then(() => console.log("✅ Service Worker Registered"))
-      .catch(err => console.error("❌ Service Worker Error:", err));
+      .then(() => console.log("✅ Service Worker registered"))
+      .catch(error => console.error("❌ Service Worker failed:", error));
   }
 </script>
 <body>
